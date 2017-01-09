@@ -1,0 +1,65 @@
+.logo-container {
+    padding: 30px 0;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.user-form {
+    padding: 10px 0px;
+
+    @media (max-width: $screen-xs-max) {
+        float: none !important;
+        text-align: center;
+    }
+
+    .form-element {
+        display: inline-block;
+        vertical-align: top;
+        margin-#{$left}: 5px;
+    }
+
+    .forgot-pass-link {
+        display: block;
+
+        @media (max-width: $screen-xs-max) {
+            text-align: $left;
+        }
+    }
+
+    .username {
+        position: relative;
+
+        &:before {
+            content: "\f007";
+            position: absolute;
+            top: 7px;
+            #{$left}: 11px;
+            color: #656565;
+
+            @extend .fa;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            display: table;
+            margin: 5px auto;
+        }
+    }
+
+    .password {
+        position: relative;
+
+        &:before {
+            content: "\f023";
+            position: absolute;
+            top: 7px;
+            #{$left}: 11px;
+            color: #656565;
+
+            @extend .fa;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            display: table;
+            margin: 5px auto;
+        }
+    }
+}
